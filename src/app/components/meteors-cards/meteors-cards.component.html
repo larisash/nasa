@@ -1,0 +1,12 @@
+<div>
+  <div nz-row [nzGutter]="8">
+    <div *ngFor="let meteor of meteors; index as i;"nz-col [nzSpan]="8">
+      <nz-card>
+        <h3>Meteor Name: {{meteor.name}}</h3>
+        <h5>Mass: {{meteor.mass}}</h5>
+        <h5>Id: {{meteor.id}}</h5>
+        <h5>Year: {{getYear(meteor.year)}}</h5>
+      </nz-card>
+    </div>
+  </div>
+</div>

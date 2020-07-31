@@ -1,0 +1,15 @@
+
+<div class="meteors-container">
+<h1 class="title">Meteors Display</h1>
+
+<nz-year-picker [(ngModel)]="date" (ngModelChange)="onChange($event)" nzPlaceHolder="Select year"></nz-year-picker>
+<app-select-mass *ngIf="meteorsService.meteorsByMassArray && meteorsService.meteorsByMassArray.length > 0" [meteorsMassOptions] ="meteorsService.meteorsByMassArray"  (massSelected)="onMassSelect($event)"></app-select-mass>
+<div class="card-conteiner">
+<app-meteors-cards [meteors]="meteorsPicked" *ngIf="meteorsPicked && meteorsPicked.length>0"></app-meteors-cards>
+</div>
+<div class="world-map">
+<app-meteors-map [meteors]="meteorsPicked" *ngIf="meteorsPicked && meteorsPicked.length>0"></app-meteors-map>
+</div>
+</div>
+
+

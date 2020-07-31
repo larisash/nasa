@@ -1,0 +1,11 @@
+<div class="world-map">
+  <agm-map [latitude]="-34.397" [longitude]="150.644"  [zoom]="1"
+  [disableDefaultUI]="false">
+    <agm-marker
+      *ngFor="let m of markers; let i = index"
+      [latitude]="m.lat"
+      [longitude]="m.lng"
+      [label]="m.label">
+    </agm-marker>
+  </agm-map>
+</div>

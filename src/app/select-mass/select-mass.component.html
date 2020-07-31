@@ -1,0 +1,5 @@
+
+<nz-select [(ngModel)]="selectedValue" (ngModelChange)="log($event)" nzAllowClear nzPlaceHolder="Choose">
+  <nz-option *ngFor="let option of meteorsMassOptions" [nzValue]="option" [nzLabel]="option"></nz-option>
+</nz-select>
+
