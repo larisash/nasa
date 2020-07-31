@@ -30,7 +30,7 @@ registerLocaleData(en);
 const antDesignIcons = AllIcons as {
   [key: string]: IconDefinition;
 };
-const icons: IconDefinition[] = Object.keys(antDesignIcons).map(key => antDesignIcons[key])
+const icons: IconDefinition[] = Object.keys(antDesignIcons).map(key => antDesignIcons[key]);
 
 @NgModule({
   declarations: [
@@ -54,11 +54,11 @@ const icons: IconDefinition[] = Object.keys(antDesignIcons).map(key => antDesign
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyAIbm7MtlCBopzlSsVOS7wIZgAGwQwXwwE'
     }),
-   // DemoNgZorroAntdModule,
+    DemoNgZorroAntdModule,
     BrowserAnimationsModule,
     ScrollingModule,
     DragDropModule,
-    BrowserModule,FormsModule,
+    BrowserModule, FormsModule,
     HttpClientModule,
     HttpClientJsonpModule,
     ReactiveFormsModule,

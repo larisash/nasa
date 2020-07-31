@@ -23,6 +23,10 @@ export class MeteorsMapComponent implements OnInit {
    });
 
   }
+  markerClicked($event: MouseEvent) {
+    console.log('clicked');
+    console.log($event);
+  }
 
 }
 interface marker {

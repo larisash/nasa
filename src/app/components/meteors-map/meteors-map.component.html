@@ -5,7 +5,8 @@
       *ngFor="let m of markers; let i = index"
       [latitude]="m.lat"
       [longitude]="m.lng"
-      [label]="m.label">
+      [label]="m.label"
+      (markerClick)="markerClicked($event)">
     </agm-marker>
   </agm-map>
 </div>

@@ -1,6 +1,6 @@
-<div>
+<div class="card-container">
   <div nz-row [nzGutter]="8">
-    <div *ngFor="let meteor of meteors; index as i;"nz-col [nzSpan]="8">
+    <div *ngFor="let meteor of meteors; index as i;" nz-col [nzSpan]="8">
       <nz-card>
         <h3>Meteor Name: {{meteor.name}}</h3>
         <h5>Mass: {{meteor.mass}}</h5>
